@@ -12,7 +12,7 @@ img = "boy.jpeg"
 
 def rgb2gray(rgb):
     # 2 dimensional array to convert image to sketch
-    return np.dot(rgb[..., :6], [0.2989, 0.5870, .1140])
+    return np.dot(rgb[..., :9], [0.2989, 0.5870, .1140])
 
 
 def dodge(front, back):
